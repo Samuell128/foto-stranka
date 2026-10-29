@@ -11,20 +11,53 @@
 
     <meta
         name="description"
-        content="Svadobný príbeh Martiny a Lukáša zachytený fotografom strbavy.photography."
+        content="Svadobný príbeh Martiny a Lukáša zachytený fotografom Samuelom Štrbavým z Oravy."
     >
+
+    <meta name="theme-color" content="#ffffff">
 
     <title>Martina a Lukáš – Svadobný príbeh | strbavy.photography</title>
 
+    <!-- Náhľad odkazu na sociálnych sieťach -->
+    <meta property="og:type" content="article">
+    <meta
+        property="og:title"
+        content="Martina a Lukáš – Svadobný príbeh"
+    >
+    <meta
+        property="og:description"
+        content="Skutočné emócie, neopakovateľná atmosféra a intímne momenty zachytené fotografom Samuelom Štrbavým."
+    >
+    <meta
+        property="og:image"
+        content="https://strbavy.photography/Images/M1.JPG"
+    >
+    <meta
+        property="og:url"
+        content="https://strbavy.photography/subpages/ML.html"
+    >
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Predbežné pripojenie k serverom fontov -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Fonty -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- Prioritné načítanie prvej fotografie galérie -->
+    <link
+        rel="preload"
+        as="image"
+        href="../Images/M1.JPG"
+        fetchpriority="high"
+    >
 
     <style>
         body.story-page nav {
@@ -43,12 +76,22 @@
             background: transparent;
             color: #222;
         }
+
+        /* Navigácia po odscrollovaní na svadobnej podstránke */
+        body.story-page nav.scrolled {
+            background: rgba(255, 255, 255, 0.9);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+        }
     </style>
 </head>
 
 <body class="story-page">
 
-    <!-- NAVIGÁCIA -->
+    <!-- ========================================
+         NAVIGÁCIA
+    ========================================= -->
 
     <nav>
         <a class="logo" href="../index.html#domov">
@@ -66,14 +109,16 @@
             class="btn"
             href="https://www.instagram.com/strbavy.photography/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
         >
             Instagram ↗
         </a>
     </nav>
 
 
-    <!-- OBSAH SVADOBNÉHO PRÍBEHU -->
+    <!-- ========================================
+         OBSAH SVADOBNÉHO PRÍBEHU
+    ========================================= -->
 
     <main class="wedding-story">
 
@@ -82,7 +127,7 @@
         <section class="story-intro">
 
             <p class="lbl">
-                Nadčasový svadobný príbeh
+              svadobný príbeh
             </p>
 
             <h1>
@@ -97,7 +142,9 @@
         </section>
 
 
-        <!-- GALÉRIA FOTOGRAFIÍ -->
+        <!-- ========================================
+             GALÉRIA FOTOGRAFIÍ
+        ========================================= -->
 
         <section
             class="story-gallery"
@@ -109,8 +156,10 @@
                 <figure class="story-photo portrait">
                     <img
                         src="../Images/M1.JPG"
-                        alt="Svadobný portrét"
+                        alt="Svadobný portrét Martiny a Lukáša"
                         loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
                     >
                 </figure>
 
@@ -119,6 +168,7 @@
                         src="../Images/M2.JPG"
                         alt="Martina a Lukáš – svadobná atmosféra"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -127,6 +177,7 @@
                         src="../Images/M3.JPG"
                         alt="Svadobný okamih"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -140,6 +191,7 @@
                         src="../Images/M4.JPG"
                         alt="Svadobný deň"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -148,6 +200,7 @@
                         src="../Images/M5.JPG"
                         alt="Detail zo svadby"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -156,6 +209,7 @@
                         src="../Images/M6.JPG"
                         alt="Svadobný detail"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -169,6 +223,7 @@
                         src="../Images/M7.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -177,6 +232,7 @@
                         src="../Images/M8.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -185,6 +241,7 @@
                         src="../Images/M9.JPG"
                         alt="Svadobný pár"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -198,6 +255,7 @@
                         src="../Images/M10.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -206,6 +264,7 @@
                         src="../Images/M11.JPG"
                         alt="Svadobné dekorácie"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -214,6 +273,7 @@
                         src="../Images/M12.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -227,6 +287,7 @@
                         src="../Images/M13.JPG"
                         alt="Svadobný obrad"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -235,6 +296,7 @@
                         src="../Images/M14.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -243,6 +305,7 @@
                         src="../Images/M15.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -256,6 +319,7 @@
                         src="../Images/M16.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -264,6 +328,7 @@
                         src="../Images/M17.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -272,6 +337,7 @@
                         src="../Images/M18.JPG"
                         alt="Novomanželia"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -285,6 +351,7 @@
                         src="../Images/M19.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -293,6 +360,7 @@
                         src="../Images/M20.JPG"
                         alt="Svadobný deň"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -301,6 +369,7 @@
                         src="../Images/M21.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -314,6 +383,7 @@
                         src="../Images/M22.JPG"
                         alt="Svadobná hostina"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -322,6 +392,7 @@
                         src="../Images/M23.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -330,6 +401,7 @@
                         src="../Images/M24.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -343,6 +415,7 @@
                         src="../Images/M25.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -351,6 +424,7 @@
                         src="../Images/M26.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -359,6 +433,7 @@
                         src="../Images/M27.JPG"
                         alt="Svadobná atmosféra"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -372,6 +447,7 @@
                         src="../Images/M28.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -380,6 +456,7 @@
                         src="../Images/F8.jpg"
                         alt="Svadobný pár"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -388,6 +465,7 @@
                         src="../Images/M29.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -401,6 +479,7 @@
                         src="../Images/F14.jpg"
                         alt="Svadobná oslava"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -409,6 +488,7 @@
                         src="../Images/M30.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -417,6 +497,7 @@
                         src="../Images/M31.JPG"
                         alt="Svadobný portrét"
                         loading="lazy"
+                        decoding="async"
                     >
                 </figure>
 
@@ -425,7 +506,9 @@
         </section>
 
 
-        <!-- ZÁVER PRÍBEHU -->
+        <!-- ========================================
+             ZÁVER PRÍBEHU
+        ========================================= -->
 
         <section class="story-closing">
 
@@ -450,7 +533,9 @@
     </main>
 
 
-    <!-- LIGHTBOX PRE FOTOGRAFIE PODSTRÁNKY -->
+    <!-- ========================================
+         LIGHTBOX
+    ========================================= -->
 
     <div
         class="story-lightbox"
@@ -481,6 +566,7 @@
             class="story-lightbox-image"
             src=""
             alt=""
+            decoding="async"
         >
 
         <button
@@ -499,9 +585,12 @@
     </div>
 
 
-    <!-- PÄTIČKA -->
+    <!-- ========================================
+         PÄTIČKA
+    ========================================= -->
 
     <footer>
+
         <div class="wrap">
 
             <div class="big">
@@ -509,11 +598,12 @@
             </div>
 
             <ul>
+
                 <li>
                     <a
                         href="https://www.instagram.com/strbavy.photography/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         Instagram ↗
                     </a>
@@ -524,6 +614,7 @@
                         E-mail ↗
                     </a>
                 </li>
+
             </ul>
 
             <div class="c">
@@ -532,18 +623,16 @@
             </div>
 
         </div>
+
     </footer>
 
 
-    <!-- JAVASCRIPT -->
+    <!-- ========================================
+         JAVASCRIPT — LIGHTBOX
+    ========================================= -->
 
     <script>
         (() => {
-            /*
-             * Tento skript sa spustí iba na svadobnej podstránke.
-             * Hlavné portfólio tým nemeníme.
-             */
-
             if (!document.body.classList.contains('story-page')) {
                 return;
             }
@@ -590,8 +679,42 @@
             let touchStartY = 0;
 
             /*
-             * Otvorenie fotografie.
+             * Načíta iba jednu susednú fotografiu v každom smere.
+             * Neprednačítavame celú galériu naraz.
              */
+
+            function preloadAdjacentPhotos() {
+                const indexes = [
+                    (currentIndex - 1 + photos.length) % photos.length,
+                    (currentIndex + 1) % photos.length
+                ];
+
+                indexes.forEach((index) => {
+                    const photo = photos[index];
+
+                    if (!photo.dataset.lightboxPreloaded) {
+                        const preload = new Image();
+
+                        preload.src = photo.currentSrc || photo.src;
+
+                        photo.dataset.lightboxPreloaded = 'true';
+                    }
+                });
+            }
+
+            function showPhoto() {
+                const photo = photos[currentIndex];
+
+                lightboxImage.src = photo.currentSrc || photo.src;
+
+                lightboxImage.alt =
+                    photo.alt || 'Svadobná fotografia';
+
+                counter.textContent =
+                    `${currentIndex + 1} / ${photos.length}`;
+
+                preloadAdjacentPhotos();
+            }
 
             function openLightbox(index) {
                 currentIndex = index;
@@ -600,53 +723,13 @@
                 showPhoto();
 
                 lightbox.classList.add('active');
+
                 lightbox.setAttribute('aria-hidden', 'false');
 
                 document.body.style.overflow = 'hidden';
 
                 closeButton.focus();
             }
-
-            /*
-             * Zobrazenie aktuálnej fotografie.
-             */
-
-            function showPhoto() {
-                const photo = photos[currentIndex];
-
-                lightboxImage.src = photo.currentSrc || photo.src;
-                lightboxImage.alt = photo.alt || 'Svadobná fotografia';
-
-                counter.textContent =
-                    (currentIndex + 1) + ' / ' + photos.length;
-
-                /*
-                 * Pri posúvaní sa načítajú aj susedné fotografie,
-                 * aby prechod pôsobil plynulejšie.
-                 */
-
-                const previousPhoto =
-                    photos[(currentIndex - 1 + photos.length) % photos.length];
-
-                const nextPhoto =
-                    photos[(currentIndex + 1) % photos.length];
-
-                if (previousPhoto) {
-                    const preloadPrevious = new Image();
-                    preloadPrevious.src =
-                        previousPhoto.currentSrc || previousPhoto.src;
-                }
-
-                if (nextPhoto) {
-                    const preloadNext = new Image();
-                    preloadNext.src =
-                        nextPhoto.currentSrc || nextPhoto.src;
-                }
-            }
-
-            /*
-             * Predchádzajúca fotografia.
-             */
 
             function showPrevious() {
                 currentIndex =
@@ -655,10 +738,6 @@
                 showPhoto();
             }
 
-            /*
-             * Nasledujúca fotografia.
-             */
-
             function showNext() {
                 currentIndex =
                     (currentIndex + 1) % photos.length;
@@ -666,27 +745,22 @@
                 showPhoto();
             }
 
-            /*
-             * Zatvorenie lightboxu.
-             */
-
             function closeLightbox() {
                 lightbox.classList.remove('active');
+
                 lightbox.setAttribute('aria-hidden', 'true');
 
                 document.body.style.overflow = '';
 
-                lightboxImage.src = '';
-                lightboxImage.alt = '';
+                lightboxImage.removeAttribute('src');
 
-                if (previousFocus && typeof previousFocus.focus === 'function') {
+                if (
+                    previousFocus &&
+                    typeof previousFocus.focus === 'function'
+                ) {
                     previousFocus.focus();
                 }
             }
-
-            /*
-             * Kliknutie na fotografie v galérii.
-             */
 
             photos.forEach((photo, index) => {
                 photo.style.cursor = 'zoom-in';
@@ -696,31 +770,17 @@
                 });
             });
 
-            /*
-             * Ovládacie tlačidlá.
-             */
-
             closeButton.addEventListener('click', closeLightbox);
-            prevButton.addEventListener('click', showPrevious);
-            nextButton.addEventListener('click', showNext);
 
-            /*
-             * Kliknutie na tmavé pozadie zatvorí fotografiu.
-             * Kliknutie priamo na obrázok ju nezatvorí.
-             */
+            prevButton.addEventListener('click', showPrevious);
+
+            nextButton.addEventListener('click', showNext);
 
             lightbox.addEventListener('click', (event) => {
                 if (event.target === lightbox) {
                     closeLightbox();
                 }
             });
-
-            /*
-             * Ovládanie klávesnicou:
-             * Esc = zatvoriť
-             * šípka doľava = predchádzajúca fotografia
-             * šípka doprava = nasledujúca fotografia
-             */
 
             document.addEventListener('keydown', (event) => {
                 if (!lightbox.classList.contains('active')) {
@@ -741,10 +801,6 @@
                     showNext();
                 }
 
-                /*
-                 * Základné obmedzenie presunu fokusu v lightboxe.
-                 */
-
                 if (event.key === 'Tab') {
                     const focusableElements = [
                         closeButton,
@@ -753,10 +809,14 @@
                     ];
 
                     const firstElement = focusableElements[0];
+
                     const lastElement =
                         focusableElements[focusableElements.length - 1];
 
-                    if (event.shiftKey && document.activeElement === firstElement) {
+                    if (
+                        event.shiftKey &&
+                        document.activeElement === firstElement
+                    ) {
                         event.preventDefault();
                         lastElement.focus();
                     } else if (
@@ -768,10 +828,6 @@
                     }
                 }
             });
-
-            /*
-             * Posúvanie prstom na mobile.
-             */
 
             lightbox.addEventListener('touchstart', (event) => {
                 if (!event.touches.length) {
@@ -793,11 +849,6 @@
                 const differenceX = touchEndX - touchStartX;
                 const differenceY = touchEndY - touchStartY;
 
-                /*
-                 * Reagujeme iba na výraznejšie vodorovné gesto,
-                 * nie na bežné pohyby prstom.
-                 */
-
                 if (
                     Math.abs(differenceX) > 55 &&
                     Math.abs(differenceX) > Math.abs(differenceY)
@@ -814,13 +865,20 @@
     </script>
 
 
-    <!-- SKRIPT NAVIGÁCIE -->
+    <!-- ========================================
+         JAVASCRIPT — NAVIGÁCIA
+    ========================================= -->
 
     <script>
         const nav = document.querySelector('nav');
 
         function updateNavigation() {
-            nav.classList.toggle('scrolled', window.scrollY > 40);
+            if (!nav) return;
+
+            nav.classList.toggle(
+                'scrolled',
+                window.scrollY > 40
+            );
         }
 
         window.addEventListener(

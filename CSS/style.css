@@ -261,8 +261,6 @@ nav.scrolled .btn {
     }
 }
 
-/* Navigácia na tabletoch */
-
 @media (max-width: 1000px) {
     nav {
         gap: 15px;
@@ -278,8 +276,6 @@ nav.scrolled .btn {
         font-size: 10px;
     }
 }
-
-/* Navigácia na mobiloch */
 
 @media (max-width: 760px) {
     nav {
@@ -504,6 +500,8 @@ nav.scrolled .btn {
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(24, minmax(0, 1fr));
+    grid-auto-flow: row;
+    align-items: start;
     gap: 10px;
 
     width: calc(100% - 40px);
@@ -602,27 +600,49 @@ nav.scrolled .btn {
 
     .portfolio-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-flow: row;
+        align-items: start;
         gap: 6px;
         width: calc(100% - 20px);
         padding: 6px;
     }
 
+    /*
+       Na mobile sa všetky typy obrázkov
+       môžu umiestniť do jedného z dvoch stĺpcov.
+       Pôvodné triedy wide/tall nemenia počet
+       stĺpcov ani nespôsobujú horizontálne pretečenie.
+    */
+
     .wide-1,
     .wide-2,
-    .wide-3 {
-        grid-column: span 2;
-        aspect-ratio: 1.35 / 1;
-    }
-
+    .wide-3,
     .tall-1,
     .tall-2,
     .tall-3 {
         grid-column: span 1;
+        width: 100%;
+        min-width: 0;
         aspect-ratio: 0.78 / 1;
     }
 
-    .item {
-        min-width: 0;
+    /*
+       Široké fotografie ostávajú cez oba stĺpce
+       iba vtedy, keď majú triedu .mobile-wide.
+       Tak sa dá presne určiť, ktoré zábery majú
+       zostať široké bez narušenia ostatných.
+    */
+
+    .portfolio-grid .item.mobile-wide {
+        grid-column: 1 / -1;
+        aspect-ratio: 1.35 / 1;
+    }
+
+    .portfolio-grid .item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 

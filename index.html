@@ -14,16 +14,46 @@
         content="Samuel Štrbavý – svadobný fotograf z Oravy. Zachytávam skutočné emócie, príbehy a neopakovateľné okamihy."
     >
 
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO -->
     <title>strbavy.photography – svadobný fotograf, Orava</title>
 
-    <!-- Google Fonts -->
+    <!-- Náhľad odkazu na sociálnych sieťach -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Samuel Štrbavý | Svadobný fotograf">
+    <meta
+        property="og:description"
+        content="Svadobný fotograf z Oravy. Skutočné príbehy, skutočné emócie."
+    >
+    <meta
+        property="og:image"
+        content="https://strbavy.photography/Images/FotoJa.JPG"
+    >
+    <meta property="og:url" content="https://strbavy.photography/">
+    <meta property="og:site_name" content="strbavy.photography">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Predbežné pripojenie k Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonty -->
     <link
-        rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+        rel="stylesheet"
     >
 
-    <!-- CSS štýly -->
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Priorita načítania hlavnej fotografie -->
+    <link
+        rel="preload"
+        as="image"
+        href="Images/Foto1.jpg"
+        fetchpriority="high"
+    >
 </head>
 
 <body>
@@ -48,7 +78,7 @@
             class="btn"
             href="https://www.instagram.com/strbavy.photography/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
         >
             Instagram ↗
         </a>
@@ -56,14 +86,14 @@
 
 
     <!-- ========================================
-         ÚVODNÁ SEKCIA — HERO
+         ÚVODNÁ SEKCIA
     ========================================= -->
 
     <header class="hero" id="domov">
 
         <h1>
-          Skutočné príbehy,<br>
-<em>skutočné emócie.</em>
+            Skutočné príbehy,<br>
+            <em>skutočné emócie.</em>
         </h1>
 
         <p>
@@ -83,7 +113,7 @@
         </div>
 
         <span class="foot">
-            ORAVA · SLOVENSKO 
+            ORAVA · SLOVENSKO
         </span>
 
     </header>
@@ -106,78 +136,153 @@
 
         <div class="portfolio-grid">
 
-            <!-- Riadok 1: štyri fotografie -->
+            <!-- Riadok 1 -->
 
             <div class="item tall-2">
-                <img src="Images/F1.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F1.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-2">
-                <img src="Images/F2.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F2.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-2">
-                <img src="Images/F3.JPG" alt="Svadobná fotografia">
+                <img
+                    src="Images/F3.JPG"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-2">
-                <img src="Images/F4.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F4.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
 
-            <!-- Riadok 2: dve široké fotografie -->
+            <!-- Riadok 2 -->
 
             <div class="item wide-2">
-                <img src="Images/F5.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F5.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item wide-2">
-                <img src="Images/F6.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F6.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
 
             <!-- Riadok 3 -->
 
             <div class="item tall-3">
-                <img src="Images/F7.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F7.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item wide-3">
-                <img src="Images/F8.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F8.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-3">
-                <img src="Images/F9.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F9.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
 
             <!-- Riadok 4 -->
 
             <div class="item tall-3">
-                <img src="Images/F10.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F10.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item wide-3">
-                <img src="Images/F11.JPG" alt="Svadobná fotografia">
+                <img
+                    src="Images/F11.JPG"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-3">
-                <img src="Images/F12.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F12.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
 
             <!-- Riadok 5 -->
 
             <div class="item tall-3">
-                <img src="Images/F13.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F13.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item wide-3">
-                <img src="Images/F14.jpg" alt="Svadobná fotografia">
+                <img
+                    src="Images/F14.jpg"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
             <div class="item tall-3">
-                <img src="Images/15.JPG" alt="Svadobná fotografia">
+                <img
+                    src="Images/15.JPG"
+                    alt="Svadobná fotografia"
+                    loading="lazy"
+                    decoding="async"
+                >
             </div>
 
         </div>
@@ -207,6 +312,7 @@
                             src="Images/M22.JPG"
                             alt="Svadobný príbeh Martiny a Lukáša"
                             loading="lazy"
+                            decoding="async"
                         >
 
                     </a>
@@ -230,6 +336,7 @@
                             src="Images/klient2.JPG"
                             alt="Svadobný príbeh Evy a Mareka"
                             loading="lazy"
+                            decoding="async"
                         >
 
                     </a>
@@ -264,6 +371,7 @@
                     src="Images/FotoJA.jpg"
                     alt="Samuel Štrbavý s fotoaparátom"
                     loading="lazy"
+                    decoding="async"
                 >
 
             </div>
@@ -274,19 +382,24 @@
                     Kto stojí za objektívom?
                 </h2>
 
-               
-
                 <p class="t">
-                 Volám sa Samuel a som svadobný fotograf z Oravy. Už 4 roky mám možnosť byť súčasťou jedných z najkrajších chvíľ v živote ľudí. Každá svadba je iná, no práve emócie, blízkosť a malé okamihy medzi veľkými udalosťami sú tým, čo ma na tejto práci baví najviac.
+                    Volám sa Samuel a som svadobný fotograf z Oravy.
+                    Už 4 roky mám možnosť byť súčasťou jedných z najkrajších
+                    chvíľ v živote ľudí. Každá svadba je iná, no práve emócie,
+                    blízkosť a malé okamihy medzi veľkými udalosťami sú tým,
+                    čo ma na tejto práci baví najviac.
 
-Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a tak, aby ste si po rokoch mohli prostredníctvom fotografií znovu pripomenúť nielen to, čo sa dialo, ale aj všetko, čo ste cítili.
+                    Fotografujem s citom pre atmosféru, svetlo a detaily.
+                    Nenápadne, prirodzene a tak, aby ste si po rokoch mohli
+                    prostredníctvom fotografií znovu pripomenúť nielen to,
+                    čo sa dialo, ale aj všetko, čo ste cítili.
                 </p>
 
                 <a
                     class="ig"
                     href="https://www.instagram.com/strbavy.photography/"
                     target="_blank"
-                    rel="noopener"
+                    rel="noopener noreferrer"
                 >
                     Sledujte moju tvorbu na Instagrame ↗
                 </a>
@@ -299,14 +412,12 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
 
     <!-- ========================================
-         REZERVÁCIA A KONTAKTNÝ FORMULÁR
+         REZERVÁCIA A KONTAKT
     ========================================= -->
 
     <section id="rezervacia">
 
         <div class="book">
-
-            <!-- Formulár -->
 
             <div class="f">
 
@@ -319,10 +430,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                     Dostupnosť termínu vám potvrdím e-mailom.
                 </p>
 
-
                 <form id="f">
-
-                    <!-- Web3Forms: identifikácia formulára -->
 
                     <input
                         type="hidden"
@@ -342,7 +450,6 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                         value="strbavy.photography"
                     >
 
-
                     <!-- Ochrana proti spamu -->
 
                     <input
@@ -353,9 +460,6 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                         autocomplete="off"
                     >
 
-
-                    <!-- Meno -->
-
                     <label>
                         Meno a priezvisko
 
@@ -364,12 +468,10 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                             name="meno"
                             placeholder="Vaše meno"
                             maxlength="300"
+                            autocomplete="name"
                             required
                         >
                     </label>
-
-
-                    <!-- E-mail -->
 
                     <label>
                         E-mail
@@ -379,12 +481,10 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                             name="email"
                             placeholder="vas@email.sk"
                             maxlength="254"
+                            autocomplete="email"
                             required
                         >
                     </label>
-
-
-                    <!-- Telefón -->
 
                     <label>
                         Telefón
@@ -394,11 +494,9 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                             name="tel"
                             placeholder="+421"
                             maxlength="120"
+                            autocomplete="tel"
                         >
                     </label>
-
-
-                    <!-- Dátum svadby -->
 
                     <label>
                         Dátum svadby
@@ -409,9 +507,6 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                         >
                     </label>
 
-
-                    <!-- Miesto svadby -->
-
                     <label>
                         Miesto svadby
 
@@ -420,30 +515,18 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                             name="miesto"
                             placeholder="Mesto alebo lokalita"
                             maxlength="400"
+                            autocomplete="off"
                         >
                     </label>
-
-
-                    <!-- Typ fotenia -->
 
                     <label>
                         Typ fotenia
 
                         <select name="typ">
-
-                            <option value="">
-                                Vyberte možnosť
-                            </option>
-
-                            <option value="Svadba">
-                                Svadba
-                            </option>
-
+                            <option value="">Vyberte možnosť</option>
+                            <option value="Svadba">Svadba</option>
                         </select>
                     </label>
-
-
-                    <!-- Správa -->
 
                     <label class="full">
                         Správa
@@ -455,9 +538,6 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                         ></textarea>
                     </label>
 
-
-                    <!-- Odoslanie -->
-
                     <button type="submit" id="submitBtn">
 
                         <span id="submitText">
@@ -467,9 +547,6 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                         <span aria-hidden="true">→</span>
 
                     </button>
-
-
-                    <!-- Správa o výsledku odoslania -->
 
                     <p
                         id="formStatus"
@@ -483,8 +560,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
             </div>
 
-
-            <!-- Fotografia pri formulári -->
+            <!-- Obrázok formulára je definovaný v CSS -->
 
             <div
                 class="ph"
@@ -498,7 +574,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
 
     <!-- ========================================
-         PÄTIČKA WEBSTRÁNKY
+         PÄTIČKA
     ========================================= -->
 
     <footer>
@@ -515,7 +591,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                     <a
                         href="https://www.instagram.com/strbavy.photography/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         Instagram ↗
                     </a>
@@ -540,7 +616,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
 
     <!-- ========================================
-         LIGHTBOX — ZVÄČŠENÁ FOTOGRAFIA
+         LIGHTBOX
     ========================================= -->
 
     <div
@@ -561,6 +637,7 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
             src=""
             alt=""
             id="portfolioLightboxImage"
+            decoding="async"
         >
 
     </div>
@@ -571,22 +648,16 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
     ========================================= -->
 
     <script>
-
         // ========================================
-        // WEB3FORMS — ODOSIELANIE REZERVÁCIÍ
+        // WEB3FORMS — ODOSIELANIE FORMULÁRA
         // ========================================
 
         const bookingForm = document.getElementById('f');
-
         const formStatus = document.getElementById('formStatus');
-
         const submitBtn = document.getElementById('submitBtn');
-
         const submitText = document.getElementById('submitText');
 
-
         bookingForm.addEventListener('submit', async function (event) {
-
             event.preventDefault();
 
             if (!bookingForm.reportValidity()) {
@@ -596,18 +667,13 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
             const originalText = submitText.textContent;
 
             submitBtn.disabled = true;
-
             submitText.textContent = 'Odosielam...';
 
             formStatus.hidden = true;
-
             formStatus.textContent = '';
-
             formStatus.style.color = '';
 
-
             try {
-
                 const formData = new FormData(bookingForm);
 
                 const response = await fetch(
@@ -620,17 +686,11 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
                 const result = await response.json();
 
-
                 if (!response.ok || !result.success) {
-
                     throw new Error(
                         result.message || 'Odoslanie sa nepodarilo.'
                     );
-
                 }
-
-
-                // Úspešné odoslanie
 
                 bookingForm.reset();
 
@@ -638,35 +698,22 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
                     'Ďakujem za správu! Vaša požiadavka bola odoslaná. Ozvem sa vám čo najskôr.';
 
                 formStatus.style.color = 'green';
-
                 formStatus.hidden = false;
-
 
             } catch (error) {
-
-                console.error(
-                    'Chyba pri odosielaní formulára:',
-                    error
-                );
+                console.error('Chyba pri odosielaní formulára:', error);
 
                 formStatus.textContent =
-                    'Správu sa nepodarilo odoslať. Skúste to znova alebo mi napíšte na info@strbavy.photography.';
+                    'Správu sa nepodarilo odoslať. Skúste to znova alebo mi napíšte na strbavy.photography@gmail.com.';
 
                 formStatus.style.color = 'red';
-
                 formStatus.hidden = false;
 
-
             } finally {
-
                 submitBtn.disabled = false;
-
                 submitText.textContent = originalText;
-
             }
-
         });
-
 
 
         // ========================================
@@ -675,144 +722,83 @@ Fotografujem s citom pre atmosféru, svetlo a detaily. Nenápadne, prirodzene a 
 
         const nv = document.querySelector('nav');
 
-
         function sc() {
+            if (!nv) return;
 
             nv.classList.toggle(
                 'scrolled',
                 window.scrollY > 40
             );
-
         }
 
-
-        window.addEventListener('scroll', sc, {
-            passive: true
-        });
-
+        window.addEventListener('scroll', sc, { passive: true });
         sc();
 
 
-
         // ========================================
-        // LIGHTBOX — KLIK NA FOTOGRAFIU
+        // LIGHTBOX — ZVÄČŠENIE FOTOGRAFIE
         // ========================================
 
-        const lightbox = document.getElementById(
-            'portfolioLightbox'
-        );
-
-        const lightboxImage = document.getElementById(
-            'portfolioLightboxImage'
-        );
-
-        const closeButton = lightbox.querySelector(
-            '.portfolio-lightbox-close'
-        );
-
-
-        // Iba fotografie v portfóliu
+        const lightbox = document.getElementById('portfolioLightbox');
+        const lightboxImage = document.getElementById('portfolioLightboxImage');
+        const closeButton = lightbox.querySelector('.portfolio-lightbox-close');
 
         const portfolioImages = document.querySelectorAll(
             '#portfolio .portfolio-grid .item img'
         );
 
-
         let previouslyFocusedElement = null;
 
-
         function openLightbox(image) {
-
             previouslyFocusedElement = image;
 
             lightboxImage.src = image.currentSrc || image.src;
-
-            lightboxImage.alt =
-                image.alt || 'Zväčšená fotografia';
+            lightboxImage.alt = image.alt || 'Zväčšená fotografia';
 
             lightbox.classList.add('active');
-
             lightbox.setAttribute('aria-hidden', 'false');
 
             document.body.style.overflow = 'hidden';
-
             closeButton.focus();
-
         }
 
-
         function closeLightbox() {
-
             lightbox.classList.remove('active');
-
             lightbox.setAttribute('aria-hidden', 'true');
 
             document.body.style.overflow = '';
-
-            lightboxImage.src = '';
+            lightboxImage.removeAttribute('src');
 
             if (previouslyFocusedElement) {
-
                 previouslyFocusedElement.focus();
-
             }
-
         }
 
-
-        // Otvorenie fotografie kliknutím
-
         portfolioImages.forEach(function (image) {
-
             image.style.cursor = 'zoom-in';
 
             image.addEventListener('click', function () {
-
                 openLightbox(image);
-
             });
-
         });
 
-
-        // Zavretie krížikom
-
-        closeButton.addEventListener(
-            'click',
-            closeLightbox
-        );
-
-
-        // Zavretie kliknutím na tmavé pozadie
+        closeButton.addEventListener('click', closeLightbox);
 
         lightbox.addEventListener('click', function (event) {
-
             if (event.target === lightbox) {
-
                 closeLightbox();
-
             }
-
         });
 
-
-        // Zavretie klávesom Escape
-
         document.addEventListener('keydown', function (event) {
-
             if (
                 event.key === 'Escape' &&
                 lightbox.classList.contains('active')
             ) {
-
                 closeLightbox();
-
             }
-
         });
-
     </script>
 
 </body>
-
 </html>
